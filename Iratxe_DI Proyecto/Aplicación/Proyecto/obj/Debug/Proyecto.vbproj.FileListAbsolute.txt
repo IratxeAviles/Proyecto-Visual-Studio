@@ -1,0 +1,105 @@
+C:\Users\Grey\Desktop\Proyecto\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\Grey\Desktop\Proyecto\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\Grey\Desktop\Proyecto\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\Grey\Desktop\Proyecto\Proyecto\bin\Debug\Proyecto.xml
+C:\Users\Grey\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.vbproj.AssemblyReference.cache
+C:\Users\Grey\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\Grey\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.Resources.resources
+C:\Users\Grey\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.vbproj.GenerateResource.cache
+C:\Users\Grey\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.vbproj.CoreCompileInputs.cache
+C:\Users\Grey\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\Grey\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.xml
+C:\Users\Grey\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\Proyecto.xml
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.AssemblyReference.cache
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Resources.resources
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Sesion.resources
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.GenerateResource.cache
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.CoreCompileInputs.cache
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.xml
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\bin\Debug\Proyecto.xml
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.AssemblyReference.cache
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.BarraHerramienta.resources
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Resources.resources
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Sesion.resources
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.GenerateResource.cache
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.CoreCompileInputs.cache
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.xml
+C:\Users\8FDAM08\Downloads\Proyecto Maider\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\bin\Debug\Proyecto.xml
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.AssemblyReference.cache
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.BarraHerramienta.resources
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Resources.resources
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Sesion.resources
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.GenerateResource.cache
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.CoreCompileInputs.cache
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.xml
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\8FDAM08\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Biblioteca.resources
+C:\Users\Grey\Downloads\Proyecto Maider\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.AssemblyReference.cache
+C:\Users\Grey\Downloads\Proyecto Maider\Proyecto Maider\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\Grey\Downloads\Proyecto Maider\Proyecto Maider\Proyecto\obj\Debug\Proyecto.xml
+C:\Users\Grey\Downloads\Proyecto Maider\Proyecto Maider\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.BarraHerramienta.resources
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.Biblioteca.resources
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\Registro.dll
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\Registro.pdb
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\Registro.xml
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.vbproj.CopyComplete
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\Proyecto.db
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\EntityFramework.dll
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\System.Data.SQLite.dll
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\EntityFramework.xml
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\bin\Debug\System.Data.SQLite.xml
+C:\Users\Grey\Desktop\Proyecto Maider\Proyecto\obj\Debug\Proyecto.NuevoJuego.resources
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Proyecto.db
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Proyecto.xml
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\EntityFramework.dll
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\System.Data.SQLite.dll
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\EntityFramework.xml
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\System.Data.SQLite.xml
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.vbproj.AssemblyReference.cache
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.BarraHerramienta.resources
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.Biblioteca.resources
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.Resources.resources
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.NuevoJuego.resources
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.Sesion.resources
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.vbproj.GenerateResource.cache
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.vbproj.CoreCompileInputs.cache
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.vbproj.CopyComplete
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.xml
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Registro.pdb
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Registro.xml
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Editar.dll
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Editar.pdb
+C:\Users\Grey\Desktop\DI Proyecto\Aplicación\Proyecto\bin\Debug\Editar.xml

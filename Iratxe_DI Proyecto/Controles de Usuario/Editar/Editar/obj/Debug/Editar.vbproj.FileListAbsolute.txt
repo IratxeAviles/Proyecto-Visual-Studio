@@ -1,0 +1,22 @@
+C:\Users\Grey\Desktop\Editar\Editar\bin\Debug\Editar.dll
+C:\Users\Grey\Desktop\Editar\Editar\bin\Debug\Editar.pdb
+C:\Users\Grey\Desktop\Editar\Editar\bin\Debug\Editar.xml
+C:\Users\Grey\Desktop\Editar\Editar\obj\Debug\Editar.vbproj.AssemblyReference.cache
+C:\Users\Grey\Desktop\Editar\Editar\obj\Debug\Editar.Resources.resources
+C:\Users\Grey\Desktop\Editar\Editar\obj\Debug\Editar.vbproj.GenerateResource.cache
+C:\Users\Grey\Desktop\Editar\Editar\obj\Debug\Editar.vbproj.CoreCompileInputs.cache
+C:\Users\Grey\Desktop\Editar\Editar\obj\Debug\Editar.dll
+C:\Users\Grey\Desktop\Editar\Editar\obj\Debug\Editar.xml
+C:\Users\Grey\Desktop\Editar\Editar\obj\Debug\Editar.pdb
+C:\Users\Grey\Desktop\Editar\Editar\obj\Debug\Editar.EditarJuego.resources
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\bin\Debug\Editar.dll
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\bin\Debug\Editar.pdb
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\bin\Debug\Editar.xml
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\obj\Debug\Editar.vbproj.AssemblyReference.cache
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\obj\Debug\Editar.Resources.resources
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\obj\Debug\Editar.EditarJuego.resources
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\obj\Debug\Editar.vbproj.GenerateResource.cache
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\obj\Debug\Editar.vbproj.CoreCompileInputs.cache
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\obj\Debug\Editar.dll
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\obj\Debug\Editar.xml
+C:\Users\Grey\Desktop\DI Proyecto\Controles de Usuario\Editar\Editar\obj\Debug\Editar.pdb
