@@ -2,7 +2,6 @@
 Imports System.Diagnostics.Eventing
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports Microsoft.VisualBasic.Devices
-Imports Registro
 
 Public Class Biblioteca
     Shared ventana As Biblioteca
@@ -30,30 +29,46 @@ Public Class Biblioteca
         Me.Controls.Add(JuegosTLP)
     End Sub
 
-    Sub CargarDatos()
-        Dim listajuegos As List(Of Juego) = BBDD.ListaJuegos()
+    Function CargarDatos() As List(Of Juego)
+        listaJuegos = BBDD.ListaJuegos()
         JuegosTLP.Controls.Clear
         Me.Controls.Add(JuegosTLP)
-    End Sub
-    Private Sub Biblioteca_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Me.ControlBox = False
-        Me.FormBorderStyle = FormBorderStyle.None
-        CargarDatos()
 
         Dim i As Integer = 0
-        For Each juego As Juego In listaJuegos
+        For Each juego As Juego In listajuegos
             Dim registroControl As New Registro With {
                 .nombre = juego.Nombre
             }
             JuegosTLP.RowStyles.Add(New RowStyle(AutoSize))
-            JuegosTLP.Controls.Add(juego, 0, i)
+            JuegosTLP.Controls.Add(registroControl, 0, i)
+
+            AddHandler registroControl.Editar, AddressOf Editar
+            AddHandler registroControl.Borrar, AddressOf Borrar
 
             i = i + 1
         Next
-
+    End Function
+    Private Sub Biblioteca_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Me.ControlBox = False
+        Me.FormBorderStyle = FormBorderStyle.None
+        listaJuegos = CargarDatos()
     End Sub
 
-    Private Sub Registro1_Load(sender As Object, e As EventArgs)
-
+    Sub Editar(sender As Object, e As ButtonClickEventArgs)
+        Dim juego = BBDD.BuscarJuego(e.nombrePulsado)
+        If listaJuegos.Count() = JuegosTLP.Rows Then
+            Dim edicion As New EditarJuego
+            edicion.nombre = juego.Nombre
+            edicion.genero = juego.Genero
+            edicion.ano = juego.Ano
+            edicion.descripcion = juego.Descripcion
+            JuegosTLP.Controls.Add(edicion, 0, listaJuegos.Count() + 1)
+        End If
     End Sub
+
+    Sub Borrar(sender As Object, e As ButtonClickEventArgs)
+        BBDD.BorrarJuego(e.nombrePulsado)
+        CargarDatos()
+    End Sub
+
 End Class

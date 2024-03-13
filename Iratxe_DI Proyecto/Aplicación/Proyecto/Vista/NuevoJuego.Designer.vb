@@ -60,7 +60,7 @@ Partial Class NuevoJuego
         Me.RegistroTLP.Controls.Add(Me.DescripcionRTB, 2, 2)
         Me.RegistroTLP.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RegistroTLP.Location = New System.Drawing.Point(0, 0)
-        Me.RegistroTLP.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.RegistroTLP.Margin = New System.Windows.Forms.Padding(6)
         Me.RegistroTLP.Name = "RegistroTLP"
         Me.RegistroTLP.RowCount = 6
         Me.RegistroTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -116,7 +116,7 @@ Partial Class NuevoJuego
         Me.CancelarB.AutoSize = True
         Me.CancelarB.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
         Me.CancelarB.Location = New System.Drawing.Point(409, 773)
-        Me.CancelarB.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.CancelarB.Margin = New System.Windows.Forms.Padding(6)
         Me.CancelarB.Name = "CancelarB"
         Me.CancelarB.Size = New System.Drawing.Size(228, 88)
         Me.CancelarB.TabIndex = 5
@@ -129,7 +129,7 @@ Partial Class NuevoJuego
         Me.GuardarB.AutoSize = True
         Me.GuardarB.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
         Me.GuardarB.Location = New System.Drawing.Point(761, 773)
-        Me.GuardarB.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GuardarB.Margin = New System.Windows.Forms.Padding(6)
         Me.GuardarB.Name = "GuardarB"
         Me.GuardarB.Size = New System.Drawing.Size(228, 88)
         Me.GuardarB.TabIndex = 9
@@ -176,11 +176,11 @@ Partial Class NuevoJuego
         Me.AnoNUD.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.AnoNUD.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AnoNUD.Location = New System.Drawing.Point(353, 639)
-        Me.AnoNUD.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.AnoNUD.Margin = New System.Windows.Forms.Padding(6)
         Me.AnoNUD.Maximum = New Decimal(New Integer() {2024, 0, 0, 0})
         Me.AnoNUD.Minimum = New Decimal(New Integer() {1950, 0, 0, 0})
         Me.AnoNUD.Name = "AnoNUD"
-        Me.AnoNUD.Size = New System.Drawing.Size(228, 56)
+        Me.AnoNUD.Size = New System.Drawing.Size(340, 56)
         Me.AnoNUD.TabIndex = 16
         Me.AnoNUD.Value = New Decimal(New Integer() {1950, 0, 0, 0})
         '
@@ -202,7 +202,7 @@ Partial Class NuevoJuego
         Me.RegistroTLP.SetColumnSpan(Me.DescripcionRTB, 2)
         Me.DescripcionRTB.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DescripcionRTB.Location = New System.Drawing.Point(353, 305)
-        Me.DescripcionRTB.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.DescripcionRTB.Margin = New System.Windows.Forms.Padding(6)
         Me.DescripcionRTB.Name = "DescripcionRTB"
         Me.DescripcionRTB.Size = New System.Drawing.Size(692, 181)
         Me.DescripcionRTB.TabIndex = 17
@@ -214,7 +214,7 @@ Partial Class NuevoJuego
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1122, 908)
         Me.Controls.Add(Me.RegistroTLP)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.MinimumSize = New System.Drawing.Size(1128, 917)
         Me.Name = "NuevoJuego"
         Me.Text = "NuevoJuego"

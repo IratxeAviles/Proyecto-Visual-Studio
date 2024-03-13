@@ -107,6 +107,12 @@
     </Compile>
     <Compile Include="Modelo\BBDD.vb" />
     <Compile Include="Modelo\Juego.vb" />
+    <Compile Include="UserControl1.designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Vista\BarraHerramienta.Designer.vb">
       <DependentUpon>BarraHerramienta.vb</DependentUpon>
     </Compile>
@@ -157,6 +163,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Entrada.resx">
       <DependentUpon>Entrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\BarraHerramienta.resx">
       <DependentUpon>BarraHerramienta.vb</DependentUpon>

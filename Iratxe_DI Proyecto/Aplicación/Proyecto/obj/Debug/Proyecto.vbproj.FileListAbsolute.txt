@@ -135,3 +135,4 @@ C:\Users\8FDAM08\Downloads\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación
 C:\Users\8FDAM08\Downloads\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.exe
 C:\Users\8FDAM08\Downloads\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.xml
 C:\Users\8FDAM08\Downloads\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\8FDAM08\Downloads\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.EditarJuego.resources

@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SQLite
+Imports Microsoft.VisualBasic.Devices
 
 Public Class BBDD
 
@@ -71,21 +72,61 @@ Public Class BBDD
             MsgBox(ex.Message)
         End Try
     End Function
+    Public Function BuscarJuego(nombre) As Juego
+        Try
+            Dim conexion As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
+            Dim consulta As String = "SELECT NOMBRE, GENERO, ANO, DESCRIPCION FROM JUEGOS WHERE NOMBRE = @nombre"
+            conexion.Open()
+            Dim cmd As New SQLiteCommand(consulta, conexion)
+            cmd.Parameters.AddWithValue("@nombre", nombre)
+            Dim lector As SQLiteDataReader = cmd.ExecuteReader()
+
+            Dim juego As New Juego()
+            While lector.Read()
+                juego.Nombre = lector("Nombre").ToString()
+                juego.Genero = lector("Genero").ToString()
+                juego.Ano = Convert.ToInt32(lector("Ano"))
+                juego.Descripcion = lector("Descripcion").ToString()
+            End While
+
+            Return juego
+            lector.Close()
+            conexion.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
     Public Function EditarJuego(nombre, genero, ano, descripcion) As Boolean
         Try
             Dim sql As String = "UPDATE JUEGOS SET GENERO = @genero, ANO = @ano, DESCRIPCION = @descripcion WHERE NOMBRE = @nombre;"
-            Using con As New SQLiteConnection(My.Settings.conexion)
-                con.Open()
-                Using cmd As New SQLiteCommand(sql, con)
-                    cmd.Parameters.Add("@nombre", DbType.String).Value = nombre
-                    cmd.Parameters.Add("@genero", DbType.String).Value = genero
-                    cmd.Parameters.Add("@ano", DbType.Int32).Value = ano
-                    cmd.Parameters.Add("@descripcion", DbType.String).Value = descripcion
-                    cmd.ExecuteNonQuery()
-                End Using
-            End Using
+            Dim con As New SQLiteConnection(My.Settings.conexion)
+            con.Open()
+
+            Dim cmd As New SQLiteCommand(sql, con)
+            cmd.Parameters.Add("@nombre", DbType.String).Value = nombre
+            cmd.Parameters.Add("@genero", DbType.String).Value = genero
+            cmd.Parameters.Add("@ano", DbType.Int32).Value = ano
+            cmd.Parameters.Add("@descripcion", DbType.String).Value = descripcion
+            cmd.ExecuteNonQuery()
+
+            con.Close()
+            MsgBox("Juego editado correctamente")
         Catch ex As Exception
-            MsgBox(ex.Message & " No se inserta el juego")
+            MsgBox(ex.Message & " No se pudo editar el juego")
+        End Try
+    End Function
+
+    Public Function BorrarJuego(nombre)
+        Try
+            Dim conexion As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
+            conexion.Open()
+            Dim sql As String = "DELETE FROM JUEGOS WHERE NOMBRE = @nombre"
+            Dim cmd As New SQLiteCommand(sql, conexion)
+            cmd.Parameters.Add("@nombre", DbType.String).Value = nombre
+
+            cmd.ExecuteNonQuery()
+        Catch ex As Exception
+            MsgBox(ex.Message & " No se pudo borrar el juego")
         End Try
     End Function
 End Class

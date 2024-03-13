@@ -4,8 +4,8 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 Public Class Registro
     Private _nombre As String
 
-    Public Event ClickEditar()
-    Public Event ClickBorrar()
+    Public Event Editar As EventHandler(Of ButtonClickEventArgs)
+    Public Event Borrar As EventHandler(Of ButtonClickEventArgs)
 
     Property nombre As String
         Get
@@ -16,12 +16,21 @@ Public Class Registro
         End Set
     End Property
 
-
-    Private Sub bEditar_Click(sender As Object, e As EventArgs) Handles bEditar.Click
-        RaiseEvent ClickEditar()
+    Public Sub ClickEditar(sender As Object, e As EventArgs) Handles bEditar.Click
+        RaiseEvent Editar(Me, New ButtonClickEventArgs(Me.nombre))
     End Sub
 
-    Private Sub bBorrar_Click(sender As Object, e As EventArgs) Handles bBorrar.Click
-        RaiseEvent ClickBorrar()
+    Public Sub ClickBorrar(sender As Object, e As EventArgs) Handles bBorrar.Click
+        RaiseEvent Borrar(Me, New ButtonClickEventArgs(Me.nombre))
     End Sub
+End Class
+
+Public Class ButtonClickEventArgs
+    Inherits EventArgs
+
+    Public Sub New(nombre As String)
+        Me.nombrePulsado = nombre
+    End Sub
+
+    Public ReadOnly Property nombrePulsado As String
 End Class

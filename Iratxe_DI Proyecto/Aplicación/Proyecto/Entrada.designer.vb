@@ -42,11 +42,12 @@ Partial Class Registro
         Me.RegistroTLP.Controls.Add(Me.NombreL, 0, 0)
         Me.RegistroTLP.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RegistroTLP.Location = New System.Drawing.Point(0, 0)
+        Me.RegistroTLP.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.RegistroTLP.Name = "RegistroTLP"
         Me.RegistroTLP.RowCount = 1
         Me.RegistroTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.RegistroTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69.0!))
-        Me.RegistroTLP.Size = New System.Drawing.Size(412, 69)
+        Me.RegistroTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 133.0!))
+        Me.RegistroTLP.Size = New System.Drawing.Size(1160, 167)
         Me.RegistroTLP.TabIndex = 0
         '
         'bBorrar
@@ -55,11 +56,11 @@ Partial Class Registro
         Me.bBorrar.AutoSize = True
         Me.bBorrar.BackColor = System.Drawing.Color.SteelBlue
         Me.bBorrar.Font = New System.Drawing.Font("Segoe UI Symbol", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bBorrar.Location = New System.Drawing.Point(319, 10)
-        Me.bBorrar.Margin = New System.Windows.Forms.Padding(10)
+        Me.bBorrar.Location = New System.Drawing.Point(932, 36)
+        Me.bBorrar.Margin = New System.Windows.Forms.Padding(20, 19, 20, 19)
         Me.bBorrar.Name = "bBorrar"
-        Me.bBorrar.Padding = New System.Windows.Forms.Padding(10)
-        Me.bBorrar.Size = New System.Drawing.Size(83, 49)
+        Me.bBorrar.Padding = New System.Windows.Forms.Padding(20, 19, 20, 19)
+        Me.bBorrar.Size = New System.Drawing.Size(166, 94)
         Me.bBorrar.TabIndex = 3
         Me.bBorrar.Text = "Borrar"
         Me.bBorrar.UseVisualStyleBackColor = False
@@ -70,11 +71,11 @@ Partial Class Registro
         Me.bEditar.AutoSize = True
         Me.bEditar.BackColor = System.Drawing.Color.SteelBlue
         Me.bEditar.Font = New System.Drawing.Font("Segoe UI Symbol", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bEditar.Location = New System.Drawing.Point(217, 10)
-        Me.bEditar.Margin = New System.Windows.Forms.Padding(10)
+        Me.bEditar.Location = New System.Drawing.Point(642, 36)
+        Me.bEditar.Margin = New System.Windows.Forms.Padding(20, 19, 20, 19)
         Me.bEditar.Name = "bEditar"
-        Me.bEditar.Padding = New System.Windows.Forms.Padding(10)
-        Me.bEditar.Size = New System.Drawing.Size(80, 49)
+        Me.bEditar.Padding = New System.Windows.Forms.Padding(20, 19, 20, 19)
+        Me.bEditar.Size = New System.Drawing.Size(166, 94)
         Me.bEditar.TabIndex = 2
         Me.bEditar.Text = "Editar"
         Me.bEditar.UseVisualStyleBackColor = False
@@ -84,21 +85,23 @@ Partial Class Registro
         Me.NombreL.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.NombreL.AutoSize = True
         Me.NombreL.Font = New System.Drawing.Font("Segoe UI Symbol", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.NombreL.Location = New System.Drawing.Point(3, 25)
+        Me.NombreL.Location = New System.Drawing.Point(6, 65)
+        Me.NombreL.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.NombreL.Name = "NombreL"
-        Me.NombreL.Size = New System.Drawing.Size(65, 19)
+        Me.NombreL.Size = New System.Drawing.Size(121, 37)
         Me.NombreL.TabIndex = 4
         Me.NombreL.Text = "Nombre"
         '
         'Registro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.Controls.Add(Me.RegistroTLP)
-        Me.MinimumSize = New System.Drawing.Size(412, 69)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.MinimumSize = New System.Drawing.Size(824, 133)
         Me.Name = "Registro"
-        Me.Size = New System.Drawing.Size(412, 69)
+        Me.Size = New System.Drawing.Size(1160, 167)
         Me.RegistroTLP.ResumeLayout(False)
         Me.RegistroTLP.PerformLayout()
         Me.ResumeLayout(False)
