@@ -42,22 +42,15 @@ Public Class Biblioteca
 
         Dim i As Integer = 0
         For Each juego As Juego In listaJuegos
-            Dim registroControl As New Registro.Registro With {
+            Dim registroControl As New Registro With {
                 .nombre = juego.Nombre
             }
             JuegosTLP.RowStyles.Add(New RowStyle(AutoSize))
             JuegosTLP.Controls.Add(juego, 0, i)
 
-            AddHandler juego.ClickEditar, AddressOf Editar
-            AddHandler juego.ClickBorrar, AddressOf execute_Delete
-
             i = i + 1
         Next
 
-    End Sub
-
-    Sub Editar(sender As Object, e As ButtonClickEventArgs)
-        Main_Form.ShowInfoView(e.Id_Movie)
     End Sub
 
     Private Sub Registro1_Load(sender As Object, e As EventArgs)

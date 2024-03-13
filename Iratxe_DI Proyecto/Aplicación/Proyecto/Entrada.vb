@@ -9,7 +9,7 @@ Public Class Registro
 
     Property nombre As String
         Get
-            Return nombre
+            Return NombreL.Text
         End Get
         Set(value As String)
             NombreL.Text = value

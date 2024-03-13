@@ -99,6 +99,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entrada.designer.vb">
+      <DependentUpon>Entrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entrada.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Modelo\BBDD.vb" />
     <Compile Include="Modelo\Juego.vb" />
     <Compile Include="Vista\BarraHerramienta.Designer.vb">
@@ -149,6 +155,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Entrada.resx">
+      <DependentUpon>Entrada.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\BarraHerramienta.resx">
       <DependentUpon>BarraHerramienta.vb</DependentUpon>
     </EmbeddedResource>
