@@ -76,7 +76,7 @@ Public Class Biblioteca
         BarraHerramienta.MostrarNuevoJuego(NuevoJuego.GetInstance)
 
         Dim formulario = Edicion
-        formulario.Text = "Añadir Personaje"
+        formulario.Text = "Info Juego"
         formulario.juego = juego
         formulario.CargarDatos()
         formulario.Show()

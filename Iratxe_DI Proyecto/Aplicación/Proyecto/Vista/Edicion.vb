@@ -46,13 +46,17 @@
     End Sub
 
     Sub Guardar()
-
+        controller.EditarJuego(editando.nombre, editando.genero, editando.ano, editando.descripcion)
 
     End Sub
 
 
     Sub Cancelar()
-        BarraHerramienta.MostrarBiblioteca(ventana)
+        Me.Close()
+
+    End Sub
+
+    Private Sub editando_Load(sender As Object, e As EventArgs) Handles editando.Load
 
     End Sub
 End Class

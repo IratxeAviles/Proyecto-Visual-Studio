@@ -44,7 +44,7 @@ Partial Class Edicion
         '
         'editando
         '
-        Me.editando.ano = "1950"
+        Me.editando.ano = 1950
         Me.editando.descripcion = "Descripción"
         Me.editando.Dock = System.Windows.Forms.DockStyle.Fill
         Me.editando.genero = "Géneros"

@@ -44,21 +44,20 @@ Partial Class EditarJuego
         Me.DatosDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DatosDGV.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DatosDGV.Location = New System.Drawing.Point(0, 0)
-        Me.DatosDGV.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.DatosDGV.Name = "DatosDGV"
         Me.DatosDGV.RowHeadersWidth = 82
-        Me.DatosDGV.Size = New System.Drawing.Size(1600, 865)
+        Me.DatosDGV.Size = New System.Drawing.Size(800, 450)
         Me.DatosDGV.TabIndex = 0
         '
         'ControlTLP
         '
         Me.ControlTLP.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ControlTLP.ColumnCount = 5
-        Me.ControlTLP.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
+        Me.ControlTLP.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.ControlTLP.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.ControlTLP.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.ControlTLP.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.ControlTLP.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
+        Me.ControlTLP.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.ControlTLP.Controls.Add(Me.DescripcionRTB, 2, 4)
         Me.ControlTLP.Controls.Add(Me.GeneroTB, 2, 2)
         Me.ControlTLP.Controls.Add(Me.NombreTB, 2, 1)
@@ -71,16 +70,15 @@ Partial Class EditarJuego
         Me.ControlTLP.Controls.Add(Me.GuardarB, 3, 5)
         Me.ControlTLP.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ControlTLP.Location = New System.Drawing.Point(0, 0)
-        Me.ControlTLP.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.ControlTLP.Name = "ControlTLP"
         Me.ControlTLP.RowCount = 6
-        Me.ControlTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.ControlTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.ControlTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.ControlTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.ControlTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.ControlTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.ControlTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.ControlTLP.Size = New System.Drawing.Size(1600, 865)
+        Me.ControlTLP.Size = New System.Drawing.Size(800, 450)
         Me.ControlTLP.TabIndex = 1
         '
         'DescripcionRTB
@@ -88,12 +86,10 @@ Partial Class EditarJuego
         Me.DescripcionRTB.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ControlTLP.SetColumnSpan(Me.DescripcionRTB, 2)
         Me.DescripcionRTB.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DescripcionRTB.Enabled = False
         Me.DescripcionRTB.Font = New System.Drawing.Font("Segoe UI Symbol", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.DescripcionRTB.Location = New System.Drawing.Point(312, 539)
-        Me.DescripcionRTB.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.DescripcionRTB.Location = New System.Drawing.Point(161, 281)
         Me.DescripcionRTB.Name = "DescripcionRTB"
-        Me.DescripcionRTB.Size = New System.Drawing.Size(1242, 153)
+        Me.DescripcionRTB.Size = New System.Drawing.Size(616, 80)
         Me.DescripcionRTB.TabIndex = 11
         Me.DescripcionRTB.Text = "Descripción"
         '
@@ -103,13 +99,11 @@ Partial Class EditarJuego
         Me.GeneroTB.BackColor = System.Drawing.Color.CornflowerBlue
         Me.GeneroTB.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ControlTLP.SetColumnSpan(Me.GeneroTB, 2)
-        Me.GeneroTB.Enabled = False
         Me.GeneroTB.Font = New System.Drawing.Font("Segoe UI Symbol", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.GeneroTB.Location = New System.Drawing.Point(439, 254)
-        Me.GeneroTB.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GeneroTB.Location = New System.Drawing.Point(222, 132)
         Me.GeneroTB.Multiline = True
         Me.GeneroTB.Name = "GeneroTB"
-        Me.GeneroTB.Size = New System.Drawing.Size(988, 63)
+        Me.GeneroTB.Size = New System.Drawing.Size(494, 33)
         Me.GeneroTB.TabIndex = 12
         Me.GeneroTB.Text = "Géneros"
         '
@@ -121,10 +115,9 @@ Partial Class EditarJuego
         Me.ControlTLP.SetColumnSpan(Me.NombreTB, 2)
         Me.NombreTB.Enabled = False
         Me.NombreTB.Font = New System.Drawing.Font("Segoe UI Symbol", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.NombreTB.Location = New System.Drawing.Point(439, 93)
-        Me.NombreTB.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.NombreTB.Location = New System.Drawing.Point(222, 49)
         Me.NombreTB.Name = "NombreTB"
-        Me.NombreTB.Size = New System.Drawing.Size(988, 54)
+        Me.NombreTB.Size = New System.Drawing.Size(494, 27)
         Me.NombreTB.TabIndex = 13
         Me.NombreTB.Text = "Nombre"
         '
@@ -133,12 +126,11 @@ Partial Class EditarJuego
         Me.AnoNUD.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.AnoNUD.BackColor = System.Drawing.Color.CornflowerBlue
         Me.AnoNUD.Font = New System.Drawing.Font("Segoe UI Symbol", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.AnoNUD.Location = New System.Drawing.Point(312, 420)
-        Me.AnoNUD.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.AnoNUD.Location = New System.Drawing.Point(161, 218)
         Me.AnoNUD.Maximum = New Decimal(New Integer() {2024, 0, 0, 0})
         Me.AnoNUD.Minimum = New Decimal(New Integer() {1950, 0, 0, 0})
         Me.AnoNUD.Name = "AnoNUD"
-        Me.AnoNUD.Size = New System.Drawing.Size(200, 61)
+        Me.AnoNUD.Size = New System.Drawing.Size(100, 34)
         Me.AnoNUD.TabIndex = 10
         Me.AnoNUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.AnoNUD.Value = New Decimal(New Integer() {1950, 0, 0, 0})
@@ -149,10 +141,9 @@ Partial Class EditarJuego
         Me.AnyoL.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.AnyoL.AutoSize = True
         Me.AnyoL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AnyoL.Location = New System.Drawing.Point(193, 427)
-        Me.AnyoL.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.AnyoL.Location = New System.Drawing.Point(97, 222)
         Me.AnyoL.Name = "AnyoL"
-        Me.AnyoL.Size = New System.Drawing.Size(107, 46)
+        Me.AnyoL.Size = New System.Drawing.Size(58, 25)
         Me.AnyoL.TabIndex = 14
         Me.AnyoL.Text = "Año:"
         '
@@ -161,10 +152,9 @@ Partial Class EditarJuego
         Me.GeneroL.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.GeneroL.AutoSize = True
         Me.GeneroL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GeneroL.Location = New System.Drawing.Point(129, 262)
-        Me.GeneroL.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.GeneroL.Location = New System.Drawing.Point(65, 136)
         Me.GeneroL.Name = "GeneroL"
-        Me.GeneroL.Size = New System.Drawing.Size(171, 46)
+        Me.GeneroL.Size = New System.Drawing.Size(90, 25)
         Me.GeneroL.TabIndex = 16
         Me.GeneroL.Text = "Género:"
         '
@@ -173,10 +163,9 @@ Partial Class EditarJuego
         Me.TituloL.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.TituloL.AutoSize = True
         Me.TituloL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TituloL.Location = New System.Drawing.Point(164, 97)
-        Me.TituloL.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.TituloL.Location = New System.Drawing.Point(82, 50)
         Me.TituloL.Name = "TituloL"
-        Me.TituloL.Size = New System.Drawing.Size(136, 46)
+        Me.TituloL.Size = New System.Drawing.Size(73, 25)
         Me.TituloL.TabIndex = 17
         Me.TituloL.Text = "Titulo:"
         '
@@ -185,10 +174,9 @@ Partial Class EditarJuego
         Me.DescripcionL.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.DescripcionL.AutoSize = True
         Me.DescripcionL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescripcionL.Location = New System.Drawing.Point(46, 592)
-        Me.DescripcionL.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.DescripcionL.Location = New System.Drawing.Point(23, 308)
         Me.DescripcionL.Name = "DescripcionL"
-        Me.DescripcionL.Size = New System.Drawing.Size(254, 46)
+        Me.DescripcionL.Size = New System.Drawing.Size(132, 25)
         Me.DescripcionL.TabIndex = 18
         Me.DescripcionL.Text = "Descripción:"
         '
@@ -198,10 +186,9 @@ Partial Class EditarJuego
         Me.Cancelarb.AutoSize = True
         Me.Cancelarb.BackColor = System.Drawing.Color.SteelBlue
         Me.Cancelarb.Font = New System.Drawing.Font("Segoe UI Symbol", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Cancelarb.Location = New System.Drawing.Point(435, 723)
-        Me.Cancelarb.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Cancelarb.Location = New System.Drawing.Point(221, 376)
         Me.Cancelarb.Name = "Cancelarb"
-        Me.Cancelarb.Size = New System.Drawing.Size(368, 117)
+        Me.Cancelarb.Size = New System.Drawing.Size(184, 61)
         Me.Cancelarb.TabIndex = 15
         Me.Cancelarb.Text = "Cancelar"
         Me.Cancelarb.UseVisualStyleBackColor = False
@@ -212,23 +199,21 @@ Partial Class EditarJuego
         Me.GuardarB.AutoSize = True
         Me.GuardarB.BackColor = System.Drawing.Color.SteelBlue
         Me.GuardarB.Font = New System.Drawing.Font("Segoe UI Symbol", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GuardarB.Location = New System.Drawing.Point(1073, 723)
-        Me.GuardarB.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GuardarB.Location = New System.Drawing.Point(538, 376)
         Me.GuardarB.Name = "GuardarB"
-        Me.GuardarB.Size = New System.Drawing.Size(346, 117)
+        Me.GuardarB.Size = New System.Drawing.Size(173, 61)
         Me.GuardarB.TabIndex = 1
         Me.GuardarB.Text = "Guardar"
         Me.GuardarB.UseVisualStyleBackColor = False
         '
         'EditarJuego
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.ControlTLP)
         Me.Controls.Add(Me.DatosDGV)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "EditarJuego"
-        Me.Size = New System.Drawing.Size(1600, 865)
+        Me.Size = New System.Drawing.Size(800, 450)
         CType(Me.DatosDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ControlTLP.ResumeLayout(False)
         Me.ControlTLP.PerformLayout()
