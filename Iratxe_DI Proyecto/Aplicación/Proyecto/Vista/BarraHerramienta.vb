@@ -1,4 +1,6 @@
-﻿Public Class BarraHerramienta
+﻿Imports Microsoft.VisualBasic.Devices
+
+Public Class BarraHerramienta
     Shared ventana As BarraHerramienta
 
     Private Sub BarraHerramienta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -19,7 +21,17 @@
         Return ventana
     End Function
 
+    Sub InsertarVentana(formulario As Form)
+        ' Comprobar si hay un formulario secundario activo
+        If Me.ActiveMdiChild IsNot Nothing Then
+            ' Cerrar y quitar el formulario secundario activo
+            Me.ActiveMdiChild.Hide()
+        End If
 
+        formulario.MdiParent = Me
+        formulario.Dock = DockStyle.Fill
+        formulario.Show()
+    End Sub
 
 
     Sub MostrarBiblioteca(ventana As Form)
@@ -46,11 +58,8 @@
     End Sub
 
     Sub MostrarEdicion(ventana As Form, juego As Juego)
-        Edicion.GetInstance().AnadirJuego(juego)
+        InsertarVentana(Edicion.GetInstance(juego))
 
-        ventana.MdiParent = Me
-        ventana.Dock = DockStyle.Fill
-        ventana.Show()
     End Sub
 
 

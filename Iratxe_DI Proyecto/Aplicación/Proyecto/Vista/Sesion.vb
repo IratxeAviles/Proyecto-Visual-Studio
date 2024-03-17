@@ -3,6 +3,8 @@ Imports System.Data.SQLite
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 
 Public Class Sesion
+    Private controller As New Controlador()
+
     ReadOnly Property TamFuenteIncial As Double = 14.0
     ReadOnly Property PaddingInicial As Double = 2.0
     ReadOnly Property MarginTBBotonInicial As Double = 2.0
@@ -48,54 +50,10 @@ Public Class Sesion
     Private Sub GuardarB_Click(sender As Object, e As EventArgs) Handles GuardarB.Click
         Dim valorUsuario As String = UsuarioTB.Text
         Dim valorContrasena As String = ContrasenaTB.Text
+        Dim valorNContrasena As String = NContrasenaTB.Text
         If UsuarioTB.Text <> "" And ContrasenaTB.Text <> "" Then
             If TituloL.Text = "Registro" Then
-                If ContrasenaTB.Text = NContrasenaTB.Text Then
-                    Try
-                        Dim conexion As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
-                        Dim consulta As String = "SELECT USUARIO FROM USUARIOS WHERE USUARIO = @usuario"
-                        conexion.Open()
-                        Dim cmd As New SQLiteCommand(consulta, conexion)
-                        cmd.Parameters.AddWithValue("@usuario", valorUsuario)
-                        Dim lector As SQLiteDataReader = cmd.ExecuteReader()
-                        Dim resultado As String = ""
-
-                        While lector.Read()
-                            resultado &= lector.GetString(0) & " ya existe en la base de datos." & vbLf
-                        End While
-
-                        lector.Close()
-                        conexion.Close()
-                        If resultado <> "" Then
-                            MsgBox(resultado)
-                        Else
-                            Try
-                                Dim sql As String = "INSERT INTO USUARIOS (USUARIO, CONTRASENA) VALUES (@usuario, @contrasena);"
-                                Dim con As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
-                                con.Open()
-                                Dim cmd2 As New SQLiteCommand(sql, con)
-                                cmd2.Parameters.Add("@usuario", DbType.String).Value = valorUsuario
-                                cmd2.Parameters.Add("@contrasena", DbType.String).Value = valorContrasena
-                                cmd2.ExecuteNonQuery()
-
-                                MsgBox("Usuario guardado correctamente")
-
-                                RemoveHandler Me.FormClosing, AddressOf FormPrincipal_FormClosing
-                                lector.Close()
-                                conexion.Close()
-                                Dim Aplicacion As New BarraHerramienta
-                                Aplicacion.Show()
-                                Me.Close()
-                            Catch ex As Exception
-                                MsgBox("Error al guardar usuario", MsgBoxStyle.Critical, "Error")
-                            End Try
-                        End If
-                    Catch ex As Exception
-                        MsgBox(ex.Message)
-                    End Try
-                Else
-                    MsgBox("Contraseña repetida incorrectamente", MsgBoxStyle.Critical, "Error")
-                End If
+                controller.GuardarUsuario(valorUsuario, valorContrasena, valorNContrasena)
             Else
                 Try
                     Dim conexion As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)

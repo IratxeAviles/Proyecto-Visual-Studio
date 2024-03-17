@@ -3,6 +3,53 @@ Imports Microsoft.VisualBasic.Devices
 
 Public Class BBDD
 
+    Public Function BuscarUsuario(valorUsuario) As Usuario
+        Dim usuario As New Usuario
+        Try
+            Dim conexion As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
+            Dim consulta As String = "SELECT USUARIO FROM USUARIOS WHERE USUARIO = @usuario"
+            conexion.Open()
+            Dim cmd As New SQLiteCommand(consulta, conexion)
+            cmd.Parameters.AddWithValue("@usuario", valorUsuario)
+            Dim lector As SQLiteDataReader = cmd.ExecuteReader()
+            Dim resultado As String = ""
+
+            While lector.Read()
+                usuario.usuario = lector("Usuario").ToString()
+                usuario.contrasena = lector("Contrasena").ToString()
+            End While
+
+            lector.Close()
+            conexion.Close()
+
+
+            Return usuario
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+    Public Function GuardarUsuario(valorUsuario, valorContrasena)
+        Try
+            Dim sql As String = "INSERT INTO USUARIOS (USUARIO, CONTRASENA) VALUES (@usuario, @contrasena);"
+            Dim con As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
+            con.Open()
+            Dim cmd2 As New SQLiteCommand(sql, con)
+            cmd2.Parameters.Add("@usuario", DbType.String).Value = valorUsuario
+            cmd2.Parameters.Add("@contrasena", DbType.String).Value = valorContrasena
+            cmd2.ExecuteNonQuery()
+
+            MsgBox("Usuario guardado correctamente")
+
+            con.Close()
+            Dim Aplicacion As New BarraHerramienta
+            Aplicacion.Show()
+
+        Catch ex As Exception
+            MsgBox("Error al guardar usuario", MsgBoxStyle.Critical, "Error")
+        End Try
+    End Function
     Public Function ListaJuegos() As List(Of Juego)
         Dim lista As New List(Of Juego)()
         Try

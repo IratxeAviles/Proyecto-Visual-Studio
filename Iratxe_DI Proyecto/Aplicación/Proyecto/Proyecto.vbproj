@@ -108,6 +108,7 @@
     </Compile>
     <Compile Include="Modelo\BBDD.vb" />
     <Compile Include="Modelo\Juego.vb" />
+    <Compile Include="Modelo\Usuario.vb" />
     <Compile Include="UserControl1.designer.vb">
       <DependentUpon>UserControl1.vb</DependentUpon>
     </Compile>

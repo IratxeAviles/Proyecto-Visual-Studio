@@ -73,7 +73,7 @@ Public Class Biblioteca
 
     Sub Editar(sender As Object, e As ButtonClickEventArgs)
         Dim juego = controller.BuscarJuego(e.nombrePulsado)
-        BarraHerramienta.GetInstance.MostrarEdicion(Edicion.GetInstance(), juego)
+        BarraHerramienta.GetInstance.MostrarEdicion(Edicion.GetInstance(juego), juego)
     End Sub
 
 
