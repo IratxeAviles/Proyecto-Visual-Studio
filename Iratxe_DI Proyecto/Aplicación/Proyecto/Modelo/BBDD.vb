@@ -14,10 +14,10 @@ Public Class BBDD
             Dim lector As SQLiteDataReader = cmd.ExecuteReader()
             Dim resultado As String = ""
 
-            While lector.Read()
+            If lector.Read() Then
                 usuario.usuario = lector("Usuario").ToString()
                 usuario.contrasena = lector("Contrasena").ToString()
-            End While
+            End If
 
             lector.Close()
             conexion.Close()

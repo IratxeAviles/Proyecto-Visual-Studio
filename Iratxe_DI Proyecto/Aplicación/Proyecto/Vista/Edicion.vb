@@ -65,7 +65,6 @@
 
     Sub Cancelar()
         Me.Close()
-
     End Sub
 
     Private Sub editando_Load(sender As Object, e As EventArgs) Handles editando.Load

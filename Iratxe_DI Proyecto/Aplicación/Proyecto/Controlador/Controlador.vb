@@ -10,7 +10,7 @@
         If valorContrasena = valorNContrasena Then
             Dim resultado = basedatos.BuscarUsuario(valorUsuario)
             If resultado Is Nothing Then
-                MsgBox(resultado.usuario + " ya está creeado")
+                MsgBox("Este usuario ya está creado")
             Else
                 basedatos.GuardarUsuario(valorUsuario, valorContrasena)
             End If
