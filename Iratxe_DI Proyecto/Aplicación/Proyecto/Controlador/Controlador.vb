@@ -30,6 +30,18 @@
         End If
 
     End Function
+
+    Public Function NuevoJuego(nombre, genero, ano, descripcion) As Boolean
+        If nombre <> "" And genero <> "" And descripcion <> "" Then
+            basedatos.NuevoJuego(nombre, genero, ano, descripcion)
+            Return True
+        Else
+            MsgBox("No puede haber campos vacíos", MsgBoxStyle.Critical, "Error")
+            Return False
+        End If
+
+    End Function
+
     Public Function ActualizarJuegos() As List(Of Juego)
 
         Return basedatos.ListaJuegos()

@@ -56,7 +56,7 @@ Partial Class Sesion
         Me.RegistroTLP.Controls.Add(Me.NContrasenaTB, 4, 3)
         Me.RegistroTLP.Controls.Add(Me.TituloL, 0, 0)
         Me.RegistroTLP.Controls.Add(Me.UsuarioTB, 2, 1)
-        Me.RegistroTLP.Controls.Add(Me.CancelarB, 3, 4)
+        Me.RegistroTLP.Controls.Add(Me.CancelarB, 2, 4)
         Me.RegistroTLP.Controls.Add(Me.GuardarB, 5, 4)
         Me.RegistroTLP.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RegistroTLP.Location = New System.Drawing.Point(0, 0)
@@ -74,7 +74,7 @@ Partial Class Sesion
         '
         Me.UsuarioL.AutoSize = True
         Me.UsuarioL.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.UsuarioL.Location = New System.Drawing.Point(45, 67)
+        Me.UsuarioL.Location = New System.Drawing.Point(43, 67)
         Me.UsuarioL.Margin = New System.Windows.Forms.Padding(3, 15, 3, 15)
         Me.UsuarioL.Name = "UsuarioL"
         Me.UsuarioL.Size = New System.Drawing.Size(99, 30)
@@ -86,7 +86,7 @@ Partial Class Sesion
         Me.ContrasenaL.AutoSize = True
         Me.RegistroTLP.SetColumnSpan(Me.ContrasenaL, 2)
         Me.ContrasenaL.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.ContrasenaL.Location = New System.Drawing.Point(45, 127)
+        Me.ContrasenaL.Location = New System.Drawing.Point(43, 127)
         Me.ContrasenaL.Margin = New System.Windows.Forms.Padding(3, 15, 3, 15)
         Me.ContrasenaL.Name = "ContrasenaL"
         Me.ContrasenaL.Size = New System.Drawing.Size(138, 30)
@@ -98,12 +98,12 @@ Partial Class Sesion
         Me.NContrasenaL.AutoSize = True
         Me.RegistroTLP.SetColumnSpan(Me.NContrasenaL, 3)
         Me.NContrasenaL.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.NContrasenaL.Location = New System.Drawing.Point(45, 187)
+        Me.NContrasenaL.Location = New System.Drawing.Point(43, 187)
         Me.NContrasenaL.Margin = New System.Windows.Forms.Padding(3, 15, 3, 15)
         Me.NContrasenaL.Name = "NContrasenaL"
-        Me.NContrasenaL.Size = New System.Drawing.Size(208, 30)
+        Me.NContrasenaL.Size = New System.Drawing.Size(218, 30)
         Me.NContrasenaL.TabIndex = 4
-        Me.NContrasenaL.Text = "Nueva contraseña:"
+        Me.NContrasenaL.Text = "Repetir contraseña:"
         '
         'ContrasenaTB
         '
@@ -112,11 +112,11 @@ Partial Class Sesion
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RegistroTLP.SetColumnSpan(Me.ContrasenaTB, 4)
         Me.ContrasenaTB.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.ContrasenaTB.Location = New System.Drawing.Point(189, 122)
+        Me.ContrasenaTB.Location = New System.Drawing.Point(208, 122)
         Me.ContrasenaTB.Margin = New System.Windows.Forms.Padding(3, 10, 3, 0)
         Me.ContrasenaTB.Name = "ContrasenaTB"
         Me.ContrasenaTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.ContrasenaTB.Size = New System.Drawing.Size(317, 36)
+        Me.ContrasenaTB.Size = New System.Drawing.Size(301, 36)
         Me.ContrasenaTB.TabIndex = 7
         '
         'NContrasenaTB
@@ -126,11 +126,11 @@ Partial Class Sesion
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RegistroTLP.SetColumnSpan(Me.NContrasenaTB, 4)
         Me.NContrasenaTB.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.NContrasenaTB.Location = New System.Drawing.Point(259, 182)
+        Me.NContrasenaTB.Location = New System.Drawing.Point(268, 182)
         Me.NContrasenaTB.Margin = New System.Windows.Forms.Padding(3, 10, 3, 0)
         Me.NContrasenaTB.Name = "NContrasenaTB"
         Me.NContrasenaTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.NContrasenaTB.Size = New System.Drawing.Size(331, 36)
+        Me.NContrasenaTB.Size = New System.Drawing.Size(322, 36)
         Me.NContrasenaTB.TabIndex = 8
         '
         'TituloL
@@ -154,10 +154,10 @@ Partial Class Sesion
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RegistroTLP.SetColumnSpan(Me.UsuarioTB, 4)
         Me.UsuarioTB.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.UsuarioTB.Location = New System.Drawing.Point(150, 62)
+        Me.UsuarioTB.Location = New System.Drawing.Point(148, 62)
         Me.UsuarioTB.Margin = New System.Windows.Forms.Padding(3, 10, 3, 0)
         Me.UsuarioTB.Name = "UsuarioTB"
-        Me.UsuarioTB.Size = New System.Drawing.Size(272, 36)
+        Me.UsuarioTB.Size = New System.Drawing.Size(280, 36)
         Me.UsuarioTB.TabIndex = 2
         '
         'CancelarB
@@ -166,7 +166,7 @@ Partial Class Sesion
         Me.CancelarB.AutoSize = True
         Me.RegistroTLP.SetColumnSpan(Me.CancelarB, 2)
         Me.CancelarB.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.CancelarB.Location = New System.Drawing.Point(206, 238)
+        Me.CancelarB.Location = New System.Drawing.Point(148, 238)
         Me.CancelarB.Name = "CancelarB"
         Me.CancelarB.Size = New System.Drawing.Size(114, 40)
         Me.CancelarB.TabIndex = 5
@@ -179,9 +179,9 @@ Partial Class Sesion
         Me.GuardarB.AutoSize = True
         Me.RegistroTLP.SetColumnSpan(Me.GuardarB, 2)
         Me.GuardarB.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.GuardarB.Location = New System.Drawing.Point(343, 238)
+        Me.GuardarB.Location = New System.Drawing.Point(349, 238)
         Me.GuardarB.Name = "GuardarB"
-        Me.GuardarB.Size = New System.Drawing.Size(163, 40)
+        Me.GuardarB.Size = New System.Drawing.Size(160, 40)
         Me.GuardarB.TabIndex = 9
         Me.GuardarB.Text = "Crear usuario"
         Me.GuardarB.UseVisualStyleBackColor = True

@@ -73,10 +73,6 @@ Public Class Sesion
         End If
     End Sub
 
-    Private Sub ContrasenaTB_TextChanged(sender As Object, e As EventArgs) Handles ContrasenaTB.TextChanged
-
-    End Sub
-
     Private Sub TuFormulario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim x As Integer = (Screen.PrimaryScreen.WorkingArea.Width - Me.Width) \ 2
         Dim y As Integer = (Screen.PrimaryScreen.WorkingArea.Height - Me.Height) \ 2
@@ -90,7 +86,4 @@ Public Class Sesion
         End If
     End Sub
 
-    Private Sub TituloL_Click(sender As Object, e As EventArgs) Handles TituloL.Click
-
-    End Sub
 End Class

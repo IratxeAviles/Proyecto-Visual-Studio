@@ -1,46 +1,4 @@
 ﻿Public Class Form1
-    ReadOnly Property TamFuenteIncial As Double = 14.0
-    ReadOnly Property PaddingInicial As Double = 2.0
-    ReadOnly Property MarginTBBotonInicial As Double = 2.0
-    ReadOnly Property MarginLRBotonInicial As Double = 2.0
-    ReadOnly Property AnchoInicial As Double = 430.0
-    ReadOnly Property AltoInicial As Double = 465.0
-
-
-    Function CambioAltura(unidad As Double) As Double
-        Return IIf(Me.Height * unidad / AltoInicial < unidad, unidad, Me.Height * unidad / AltoInicial)
-    End Function
-
-    Function CambioAnchura(unidad As Double) As Double
-        Return IIf(Me.Width * unidad / AnchoInicial < unidad, unidad, Me.Width * unidad / AnchoInicial)
-    End Function
-
-    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
-        Dim tamFuente As Double = cambioAltura(TamFuenteIncial)
-        Dim padding As Double = cambioAnchura(PaddingInicial)
-        Dim marginTB As Double = cambioAltura(MarginTBBotonInicial)
-        Dim marginLR As Double = cambioAnchura(MarginLRBotonInicial)
-
-        For Each control In PrincipalTLP.Controls
-            control.Font = New System.Drawing.Font("Segoe UI Symbol; style=Bold", tamFuente)
-        Next
-
-        PrincipalTLP.Padding = New Padding(padding)
-        LogoPB.Margin = New Padding(marginLR, marginTB, marginLR, marginTB)
-        RegistroB.Margin = New Padding(marginLR, marginTB, marginLR, marginTB)
-        IniciarSesionB.Margin = New Padding(marginLR, marginTB, marginLR, marginTB)
-        EscalarImagen()
-    End Sub
-
-    Private Sub EscalarImagen()
-        Dim nuevaAnchura As Integer = CInt(LogoPB.Width * 1.1)
-        Dim nuevaAltura As Integer = CInt(LogoPB.Height * 1.1)
-
-        Dim imagenOriginal As Image = LogoPB.Image
-        Dim imagenEscalada As New Bitmap(imagenOriginal, nuevaAnchura, nuevaAltura)
-
-        LogoPB.Image = imagenEscalada
-    End Sub
 
     Private Sub IniciarSesionB_Click(sender As Object, e As EventArgs) Handles IniciarSesionB.Click
         Dim SecondForm As New Sesion
