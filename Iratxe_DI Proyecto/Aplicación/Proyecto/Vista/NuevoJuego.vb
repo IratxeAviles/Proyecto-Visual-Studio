@@ -1,4 +1,5 @@
-﻿Imports System.Data.SQLite
+﻿Imports System.ComponentModel
+Imports System.Data.SQLite
 
 Public Class NuevoJuego
     ReadOnly Property TamFuenteIncial As Double = 14.0
@@ -71,4 +72,8 @@ Public Class NuevoJuego
         Me.Close()
     End Sub
 
+    Private Sub NuevoJuego_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Biblioteca.GetInstance().CargarDatos()
+        Biblioteca.GetInstance().Show()
+    End Sub
 End Class

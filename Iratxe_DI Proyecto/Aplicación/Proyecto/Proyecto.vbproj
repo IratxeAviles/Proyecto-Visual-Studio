@@ -126,6 +126,12 @@
     <Compile Include="Vista\Biblioteca.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Vista\Edicion.Designer.vb">
+      <DependentUpon>Edicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Edicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vista\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Biblioteca.resx">
       <DependentUpon>Biblioteca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Edicion.resx">
+      <DependentUpon>Edicion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

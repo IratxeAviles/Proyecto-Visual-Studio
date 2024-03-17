@@ -23,23 +23,12 @@ Partial Class BarraHerramienta
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BarraHerramienta))
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.BibliotecaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AñadirJuegoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.SteelBlue
-        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BibliotecaToolStripMenuItem, Me.PerToolStripMenuItem, Me.AñadirJuegoToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 33)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'BibliotecaToolStripMenuItem
         '
@@ -63,6 +52,17 @@ Partial Class BarraHerramienta
         Me.AñadirJuegoToolStripMenuItem.Size = New System.Drawing.Size(147, 29)
         Me.AñadirJuegoToolStripMenuItem.Text = "Añadir Juego"
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.SteelBlue
+        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BibliotecaToolStripMenuItem, Me.PerToolStripMenuItem, Me.AñadirJuegoToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 33)
+        Me.MenuStrip1.TabIndex = 0
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
         'BarraHerramienta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -81,8 +81,8 @@ Partial Class BarraHerramienta
 
     End Sub
 
-    Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents BibliotecaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AñadirJuegoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MenuStrip1 As MenuStrip
 End Class

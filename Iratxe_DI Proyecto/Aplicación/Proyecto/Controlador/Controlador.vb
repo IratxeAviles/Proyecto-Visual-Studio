@@ -7,6 +7,14 @@
         Return basedatos.ListaJuegos()
     End Function
 
+    Public Function BuscarJuego(nombre) As Juego
+        Return basedatos.BuscarJuego(nombre)
+    End Function
+
+    Public Function EditarJuego(nombre, genero, ano, descripcion)
+        basedatos.EditarJuego(nombre, genero, ano, descripcion)
+    End Function
+
     Public Function BorrarJuego(nombre) As List(Of Juego)
         basedatos.BorrarJuego(nombre)
         Return ActualizarJuegos()

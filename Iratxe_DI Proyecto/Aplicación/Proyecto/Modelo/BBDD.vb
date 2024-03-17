@@ -96,7 +96,7 @@ Public Class BBDD
             MsgBox(ex.Message)
         End Try
     End Function
-    Public Function EditarJuego(nombre, genero, ano, descripcion) As Boolean
+    Public Function EditarJuego(nombre, genero, ano, descripcion)
         Try
             Dim sql As String = "UPDATE JUEGOS SET GENERO = @genero, ANO = @ano, DESCRIPCION = @descripcion WHERE NOMBRE = @nombre;"
             Dim con As New SQLiteConnection(My.Settings.conexion)

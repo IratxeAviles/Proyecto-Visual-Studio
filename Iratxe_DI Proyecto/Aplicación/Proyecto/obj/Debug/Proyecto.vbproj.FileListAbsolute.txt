@@ -169,3 +169,4 @@ C:\Users\Grey\Desktop\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación\Proy
 C:\Users\Grey\Desktop\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.exe
 C:\Users\Grey\Desktop\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.xml
 C:\Users\Grey\Desktop\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Grey\Desktop\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplicación\Proyecto\obj\Debug\Proyecto.Edicion.resources

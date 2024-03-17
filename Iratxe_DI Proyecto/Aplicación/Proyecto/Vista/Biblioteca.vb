@@ -16,67 +16,66 @@ Public Class Biblioteca
         Return ventana
     End Function
 
-    Sub New()
-        InitializeComponent()
-
-        JuegosTLP.AutoScroll = True
-        JuegosTLP.ColumnCount = 1
-        JuegosTLP.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0!))
-
-        ' Desactiva el llenado del DockStyle para permitir el centrado horizontal
-        JuegosTLP.Dock = DockStyle.None
-
-        ' Ajusta el tamaño de la tabla
-        JuegosTLP.Size = New Size(600, 600)
-
-        JuegosTLP.Anchor = AnchorStyles.None
-        JuegosTLP.Location = New Point((Me.ClientSize.Width - JuegosTLP.Width) / 2, 0)
-
-        JuegosTLP.Name = "JuegosTLP"
-        JuegosTLP.TabIndex = 0
-
-        Me.Controls.Add(JuegosTLP)
-    End Sub
-
-
-
-
-    Function CargarDatos() As List(Of Juego)
-        listaJuegos = controller.ActualizarJuegos()
-        JuegosTLP.Controls.Clear
-        Me.Controls.Add(JuegosTLP)
-
-        Dim i As Integer = 0
-        For Each juego As Juego In listajuegos
-            Dim registroControl As New Registro With {
-                .nombre = juego.Nombre
-            }
-            JuegosTLP.RowStyles.Add(New RowStyle(AutoSize))
-            JuegosTLP.Controls.Add(registroControl, 0, i)
-
-            'AddHandler registroControl.Editar, AddressOf Editar
-            AddHandler registroControl.Borrar, AddressOf Borrar
-
-            i = i + 1
-        Next
-    End Function
     Private Sub Biblioteca_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.ControlBox = False
         Me.FormBorderStyle = FormBorderStyle.None
         listaJuegos = CargarDatos()
     End Sub
 
-    'Sub Editar(sender As Object, e As ButtonClickEventArgs)
-    '    Dim juego = BBDD.BuscarJuego(e.nombrePulsado)
-    '    If listaJuegos.Count() = JuegosTLP.Rows Then
-    '        Dim edicion As New EditarJuego
-    '        edicion.nombre = juego.Nombre
-    '        edicion.genero = juego.Genero
-    '        edicion.ano = juego.Ano
-    '        edicion.descripcion = juego.Descripcion
-    '        JuegosTLP.Controls.Add(edicion, 0, listaJuegos.Count() + 1)
-    '    End If
-    'End Sub
+    Sub New()
+        InitializeComponent()
+
+        JuegosTLP.AutoScroll = True
+        JuegosTLP.ColumnCount = 1
+        JuegosTLP.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0!))
+        JuegosTLP.Dock = DockStyle.None
+        JuegosTLP.Size = New Size(600, 600)
+        JuegosTLP.Anchor = AnchorStyles.None
+        JuegosTLP.Location = New Point((Me.ClientSize.Width - JuegosTLP.Width) / 2, 0)
+        JuegosTLP.Name = "JuegosTLP"
+        JuegosTLP.TabIndex = 0
+
+        Me.Controls.Add(JuegosTLP)
+    End Sub
+
+    Function CargarDatos()
+        listaJuegos = controller.ActualizarJuegos()
+        JuegosTLP.Controls.Clear
+        Me.Controls.Add(JuegosTLP)
+
+        Dim i As Integer = 0
+        For Each juego As Juego In listaJuegos
+            Dim registroControl As New Registro With {
+                .nombre = juego.Nombre
+            }
+            JuegosTLP.RowStyles.Add(New RowStyle(AutoSize))
+            JuegosTLP.Controls.Add(registroControl, 0, i)
+
+            AddHandler registroControl.Editar, AddressOf Editar
+            AddHandler registroControl.Borrar, AddressOf Borrar
+
+            i = i + 1
+        Next
+    End Function
+
+    Sub MostrarEdicion(ventana As Form)
+        If ventana Is Nothing OrElse ventana.IsDisposed Then
+            ventana = New Edicion()
+        End If
+        If Me.ActiveMdiChild IsNot Nothing Then
+            Me.ActiveMdiChild.Hide()
+        End If
+
+        ventana.MdiParent = Me
+        ventana.Dock = DockStyle.Fill
+        ventana.Show()
+    End Sub
+
+    Sub Editar(sender As Object, e As ButtonClickEventArgs)
+        Dim juego = controller.BuscarJuego(e.nombrePulsado)
+        BarraHerramienta.GetInstance.MostrarEdicion(Edicion.GetInstance(), juego)
+    End Sub
+
 
     Sub Borrar(sender As Object, e As ButtonClickEventArgs)
         controller.BorrarJuego(e.nombrePulsado)

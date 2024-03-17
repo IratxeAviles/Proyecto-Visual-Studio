@@ -1,4 +1,5 @@
 ﻿Public Class BarraHerramienta
+    Shared ventana As BarraHerramienta
 
     Private Sub BarraHerramienta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim x As Integer = (Screen.PrimaryScreen.WorkingArea.Width - Me.Width) \ 2
@@ -10,6 +11,15 @@
 
         MostrarBiblioteca(Biblioteca.GetInstance())
     End Sub
+
+    Shared Function GetInstance() As BarraHerramienta
+        If ventana Is Nothing Then
+            ventana = New BarraHerramienta
+        End If
+        Return ventana
+    End Function
+
+
 
 
     Sub MostrarBiblioteca(ventana As Form)
@@ -35,18 +45,20 @@
         ventana.Show()
     End Sub
 
+    Sub MostrarEdicion(ventana As Form, juego As Juego)
+        Edicion.GetInstance().AnadirJuego(juego)
+
+        ventana.MdiParent = Me
+        ventana.Dock = DockStyle.Fill
+        ventana.Show()
+    End Sub
 
 
     Private Sub AñadirJuegoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AñadirJuegoToolStripMenuItem.Click
         MostrarNuevoJuego(NuevoJuego.GetInstance)
     End Sub
 
-    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
-
-    End Sub
-
     Private Sub PerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PerToolStripMenuItem.Click
-        Form1.Show()
         Me.Close()
     End Sub
 
@@ -55,13 +67,6 @@
     End Sub
 
     Private Sub BarraHerramienta_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If e.CloseReason = CloseReason.UserClosing Then
-            Dim resultado As DialogResult = MessageBox.Show("¿Cerrar aplicación?", "Cerrar aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-            If resultado = DialogResult.No Then
-                e.Cancel = True
-            Else
-                Application.Exit()
-            End If
-        End If
+        Form1.Show()
     End Sub
 End Class
