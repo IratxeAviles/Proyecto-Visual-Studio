@@ -3,8 +3,7 @@ Imports Microsoft.VisualBasic.Devices
 
 Public Class BBDD
 
-    Public Function BuscarUsuario(valorUsuario) As Usuario
-        Dim usuario As New Usuario
+    Public Function GuardarUsuario(valorUsuario, valorContrasena) As Boolean
         Try
             Dim conexion As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
             Dim consulta As String = "SELECT USUARIO FROM USUARIOS WHERE USUARIO = @usuario"
@@ -14,40 +13,70 @@ Public Class BBDD
             Dim lector As SQLiteDataReader = cmd.ExecuteReader()
             Dim resultado As String = ""
 
-            If lector.Read() Then
-                usuario.usuario = lector("Usuario").ToString()
-                usuario.contrasena = lector("Contrasena").ToString()
-            End If
+            While lector.Read()
+                resultado &= lector.GetString(0) & " ya existe en la base de datos." & vbLf
+            End While
 
             lector.Close()
             conexion.Close()
+            If resultado <> "" Then
+                Return False
+            Else
+                Try
+                    Dim sql As String = "INSERT INTO USUARIOS (USUARIO, CONTRASENA) VALUES (@usuario, @contrasena);"
+                    Dim con As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
+                    con.Open()
+                    Dim cmd2 As New SQLiteCommand(sql, con)
+                    cmd2.Parameters.Add("@usuario", DbType.String).Value = valorUsuario
+                    cmd2.Parameters.Add("@contrasena", DbType.String).Value = valorContrasena
+                    cmd2.ExecuteNonQuery()
 
+                    Return True
 
-            Return usuario
+                    con.Close()
+                Catch ex As Exception
+                    Return False
 
+                End Try
+            End If
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Function
 
-    Public Function GuardarUsuario(valorUsuario, valorContrasena)
+    Public Function IniciarSesion(valorUsuario, valorContrasena) As Boolean
+        Dim resultado = False
         Try
-            Dim sql As String = "INSERT INTO USUARIOS (USUARIO, CONTRASENA) VALUES (@usuario, @contrasena);"
-            Dim con As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
-            con.Open()
-            Dim cmd2 As New SQLiteCommand(sql, con)
-            cmd2.Parameters.Add("@usuario", DbType.String).Value = valorUsuario
-            cmd2.Parameters.Add("@contrasena", DbType.String).Value = valorContrasena
-            cmd2.ExecuteNonQuery()
+            Dim conexion As SQLiteConnection = New SQLiteConnection(My.Settings.conexion)
+            Dim consulta As String = "SELECT USUARIO, CONTRASENA FROM USUARIOS WHERE USUARIO = @usuario"
+            conexion.Open()
+            Dim cmd As New SQLiteCommand(consulta, conexion)
+            cmd.Parameters.AddWithValue("@usuario", valorUsuario)
+            Dim lector As SQLiteDataReader = cmd.ExecuteReader()
 
-            MsgBox("Usuario guardado correctamente")
+            Dim encontrado As Boolean = False
 
-            con.Close()
-            Dim Aplicacion As New BarraHerramienta
-            Aplicacion.Show()
+            While lector.Read()
+                If lector.GetString(0) = valorUsuario Then
+                    encontrado = True
+                    Exit While
+                End If
+            End While
 
+            If Not encontrado Then
+                MsgBox("El usuario no esta registrado", MsgBoxStyle.Critical, "Error")
+            Else
+                If lector.GetString(1) = valorContrasena Then
+                    lector.Close()
+                    conexion.Close()
+                    resultado = True
+                    Return resultado
+                Else
+                    MsgBox("Contraseña incorrecta", MsgBoxStyle.Critical, "Error")
+                End If
+            End If
         Catch ex As Exception
-            MsgBox("Error al guardar usuario", MsgBoxStyle.Critical, "Error")
+            MsgBox(ex.Message)
         End Try
     End Function
     Public Function ListaJuegos() As List(Of Juego)
