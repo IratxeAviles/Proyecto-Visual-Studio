@@ -21,16 +21,16 @@ Public Class BarraHerramienta
         Return ventana
     End Function
 
-    Sub InsertarVentana(formulario As Form)
+    Sub InsertarVentana(ventana As Form)
         ' Comprobar si hay un formulario secundario activo
         If Me.ActiveMdiChild IsNot Nothing Then
             ' Cerrar y quitar el formulario secundario activo
             Me.ActiveMdiChild.Hide()
         End If
 
-        formulario.MdiParent = Me
-        formulario.Dock = DockStyle.Fill
-        formulario.Show()
+        ventana.MdiParent = Me
+        ventana.Dock = DockStyle.Fill
+        ventana.Show()
     End Sub
 
 

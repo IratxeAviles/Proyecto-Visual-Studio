@@ -21,8 +21,8 @@
         editando.descripcion = juego.Descripcion
 
 
-        ' AddHandler Editar.Guardar, AddressOf Guardar
-        'AddHandler Editar.Cancelar, AddressOf Cancelar
+        AddHandler editando.Guardar, AddressOf Guardar
+        AddHandler editando.Cancelar, AddressOf Cancelar
 
     End Function
 
