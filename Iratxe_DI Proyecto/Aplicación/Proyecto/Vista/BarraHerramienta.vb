@@ -5,7 +5,6 @@
         Dim y As Integer = (Screen.PrimaryScreen.WorkingArea.Height - Me.Height) \ 2
 
         Me.Location = New Point(x, y)
-        Me.FormBorderStyle = FormBorderStyle.None
         Me.WindowState = FormWindowState.Maximized
 
 
@@ -16,9 +15,6 @@
     Sub MostrarBiblioteca(ventana As Form)
         If ventana Is Nothing OrElse ventana.IsDisposed Then
             ventana = New Biblioteca()
-        End If
-        If Me.ActiveMdiChild IsNot Nothing Then
-            Me.ActiveMdiChild.Hide()
         End If
 
         ventana.MdiParent = Me
@@ -58,7 +54,14 @@
         MostrarBiblioteca(Biblioteca.GetInstance())
     End Sub
 
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
-        Me.WindowState = FormWindowState.Minimized
+    Private Sub BarraHerramienta_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If e.CloseReason = CloseReason.UserClosing Then
+            Dim resultado As DialogResult = MessageBox.Show("¿Cerrar aplicación?", "Cerrar aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            If resultado = DialogResult.No Then
+                e.Cancel = True
+            Else
+                Application.Exit()
+            End If
+        End If
     End Sub
 End Class

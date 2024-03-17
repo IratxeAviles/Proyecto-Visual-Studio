@@ -57,8 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=C:\Users\8FDAM08\Downloads\Proyecto-Visual-Studio\Iratxe_DI Proyecto\"& _ 
-            "Aplicación\Proyecto\Proyecto.db;Version=3")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=C:\Users\Grey\Desktop\Proyecto-Visual-Studio\Iratxe_DI Proyecto\Aplic"& _ 
+            "ación\Proyecto\Proyecto.db;Version=3")>  _
         Public ReadOnly Property conexion() As String
             Get
                 Return CType(Me("conexion"),String)

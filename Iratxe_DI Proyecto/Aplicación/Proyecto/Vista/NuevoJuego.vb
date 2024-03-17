@@ -60,9 +60,6 @@ Public Class NuevoJuego
 
             BBDD.NuevoJuego(valorNombre, valorGenero, valorAno, valorDescripcion)
 
-            Dim Aplicacion As New BarraHerramienta
-                Aplicacion.Show()
-                BarraHerramienta.MostrarBiblioteca(Biblioteca)
             Me.Close()
         Else
             MsgBox("No puede haber campos vacíos", MsgBoxStyle.Critical, "Error")
@@ -74,7 +71,4 @@ Public Class NuevoJuego
         Me.Close()
     End Sub
 
-    Private Sub RegistroTLP_Paint(sender As Object, e As PaintEventArgs) Handles RegistroTLP.Paint
-
-    End Sub
 End Class

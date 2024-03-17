@@ -7,7 +7,7 @@ Public Class Biblioteca
     Shared ventana As Biblioteca
     Dim listaJuegos As New List(Of Juego)
     Dim JuegosTLP = New TableLayoutPanel()
-    Private BBDD As New BBDD()
+    Private controller As New Controlador()
 
     Shared Function GetInstance() As Biblioteca
         If ventana Is Nothing Then
@@ -22,15 +22,27 @@ Public Class Biblioteca
         JuegosTLP.AutoScroll = True
         JuegosTLP.ColumnCount = 1
         JuegosTLP.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0!))
-        JuegosTLP.Dock = DockStyle.Fill
+
+        ' Desactiva el llenado del DockStyle para permitir el centrado horizontal
+        JuegosTLP.Dock = DockStyle.None
+
+        ' Ajusta el tamaño de la tabla
+        JuegosTLP.Size = New Size(600, 600)
+
+        JuegosTLP.Anchor = AnchorStyles.None
+        JuegosTLP.Location = New Point((Me.ClientSize.Width - JuegosTLP.Width) / 2, 0)
+
         JuegosTLP.Name = "JuegosTLP"
         JuegosTLP.TabIndex = 0
 
         Me.Controls.Add(JuegosTLP)
     End Sub
 
+
+
+
     Function CargarDatos() As List(Of Juego)
-        listaJuegos = BBDD.ListaJuegos()
+        listaJuegos = controller.ActualizarJuegos()
         JuegosTLP.Controls.Clear
         Me.Controls.Add(JuegosTLP)
 
@@ -42,7 +54,7 @@ Public Class Biblioteca
             JuegosTLP.RowStyles.Add(New RowStyle(AutoSize))
             JuegosTLP.Controls.Add(registroControl, 0, i)
 
-            AddHandler registroControl.Editar, AddressOf Editar
+            'AddHandler registroControl.Editar, AddressOf Editar
             AddHandler registroControl.Borrar, AddressOf Borrar
 
             i = i + 1
@@ -54,20 +66,20 @@ Public Class Biblioteca
         listaJuegos = CargarDatos()
     End Sub
 
-    Sub Editar(sender As Object, e As ButtonClickEventArgs)
-        Dim juego = BBDD.BuscarJuego(e.nombrePulsado)
-        If listaJuegos.Count() = JuegosTLP.Rows Then
-            Dim edicion As New EditarJuego
-            edicion.nombre = juego.Nombre
-            edicion.genero = juego.Genero
-            edicion.ano = juego.Ano
-            edicion.descripcion = juego.Descripcion
-            JuegosTLP.Controls.Add(edicion, 0, listaJuegos.Count() + 1)
-        End If
-    End Sub
+    'Sub Editar(sender As Object, e As ButtonClickEventArgs)
+    '    Dim juego = BBDD.BuscarJuego(e.nombrePulsado)
+    '    If listaJuegos.Count() = JuegosTLP.Rows Then
+    '        Dim edicion As New EditarJuego
+    '        edicion.nombre = juego.Nombre
+    '        edicion.genero = juego.Genero
+    '        edicion.ano = juego.Ano
+    '        edicion.descripcion = juego.Descripcion
+    '        JuegosTLP.Controls.Add(edicion, 0, listaJuegos.Count() + 1)
+    '    End If
+    'End Sub
 
     Sub Borrar(sender As Object, e As ButtonClickEventArgs)
-        BBDD.BorrarJuego(e.nombrePulsado)
+        controller.BorrarJuego(e.nombrePulsado)
         CargarDatos()
     End Sub
 

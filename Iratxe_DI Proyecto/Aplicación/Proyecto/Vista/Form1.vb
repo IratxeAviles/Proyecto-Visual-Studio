@@ -65,13 +65,6 @@
         Me.Location = New Point(x, y)
     End Sub
 
-    Private Sub PrincipalTLP_Paint(sender As Object, e As PaintEventArgs) Handles PrincipalTLP.Paint
-
-    End Sub
-
-    Private Sub LogoPB_Click(sender As Object, e As EventArgs) Handles LogoPB.Click
-
-    End Sub
     Private Sub FormPrincipal_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If e.CloseReason = CloseReason.UserClosing Then
             Dim resultado As DialogResult = MessageBox.Show("¿Cerrar aplicación?", "Cerrar aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Question)

@@ -99,6 +99,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\Controlador.vb" />
     <Compile Include="Entrada.designer.vb">
       <DependentUpon>Entrada.vb</DependentUpon>
     </Compile>
@@ -212,9 +213,7 @@
   <ItemGroup>
     <Content Include="Resources\free_video_gaming_logo_psd_by_fruitygamers-d6kfw8w-3046344137.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controlador\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
