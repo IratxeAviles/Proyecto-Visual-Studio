@@ -35,7 +35,7 @@
         Me.Controls.Add(InfoTLP)
     End Sub
 
-    Function CargarDatos()
+    Function CargarDatos() ' o igual es esto lo que tengo mal o.O
         InfoTLP.Controls.Clear
         Me.Controls.Add(InfoTLP)
 
