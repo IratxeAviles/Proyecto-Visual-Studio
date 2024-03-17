@@ -196,6 +196,7 @@ Partial Class NuevoJuego
         '
         Me.RegistroTLP.SetColumnSpan(Me.DescripcionRTB, 2)
         Me.DescripcionRTB.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DescripcionRTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DescripcionRTB.Location = New System.Drawing.Point(185, 158)
         Me.DescripcionRTB.Name = "DescripcionRTB"
         Me.DescripcionRTB.Size = New System.Drawing.Size(338, 96)
