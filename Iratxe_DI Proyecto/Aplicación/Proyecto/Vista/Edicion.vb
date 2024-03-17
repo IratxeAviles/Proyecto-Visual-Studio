@@ -24,7 +24,7 @@
     Function CargarDatos(juego)
         editando.nombre = juego.Nombre
         editando.genero = juego.Genero
-        editando.ano = juego.Ano
+        editando.ano = juego.Ano.ToString
         editando.descripcion = juego.Descripcion
 
 
@@ -46,7 +46,19 @@
     End Sub
 
     Sub Guardar()
-        controller.EditarJuego(editando.nombre, editando.genero, editando.ano, editando.descripcion)
+        Dim numeroInt As Integer
+        If Integer.TryParse(editando.AnoTB.Text, numeroInt) Then
+            If numeroInt < 1950 Or numeroInt > 2024 Then
+                MsgBox("El campo año tiene que estar entre 1950 y 2024", MsgBoxStyle.Critical, "Error")
+            Else
+                controller.EditarJuego(editando.nombre, editando.genero, editando.ano, editando.descripcion)
+                Me.Close()
+            End If
+
+        Else
+            MsgBox("El campo año tiene que ser un numero", MsgBoxStyle.Critical, "Error")
+
+        End If
 
     End Sub
 

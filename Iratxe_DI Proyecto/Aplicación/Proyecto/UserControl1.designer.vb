@@ -27,16 +27,15 @@ Partial Class EditarJuego
         Me.DescripcionRTB = New System.Windows.Forms.RichTextBox()
         Me.GeneroTB = New System.Windows.Forms.TextBox()
         Me.NombreTB = New System.Windows.Forms.TextBox()
-        Me.AnoNUD = New System.Windows.Forms.NumericUpDown()
         Me.AnyoL = New System.Windows.Forms.Label()
         Me.GeneroL = New System.Windows.Forms.Label()
         Me.TituloL = New System.Windows.Forms.Label()
         Me.DescripcionL = New System.Windows.Forms.Label()
         Me.Cancelarb = New System.Windows.Forms.Button()
         Me.GuardarB = New System.Windows.Forms.Button()
+        Me.AnoTB = New System.Windows.Forms.TextBox()
         CType(Me.DatosDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ControlTLP.SuspendLayout()
-        CType(Me.AnoNUD, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DatosDGV
@@ -61,13 +60,13 @@ Partial Class EditarJuego
         Me.ControlTLP.Controls.Add(Me.DescripcionRTB, 2, 4)
         Me.ControlTLP.Controls.Add(Me.GeneroTB, 2, 2)
         Me.ControlTLP.Controls.Add(Me.NombreTB, 2, 1)
-        Me.ControlTLP.Controls.Add(Me.AnoNUD, 2, 3)
         Me.ControlTLP.Controls.Add(Me.AnyoL, 1, 3)
         Me.ControlTLP.Controls.Add(Me.GeneroL, 1, 2)
         Me.ControlTLP.Controls.Add(Me.TituloL, 1, 1)
         Me.ControlTLP.Controls.Add(Me.DescripcionL, 1, 4)
         Me.ControlTLP.Controls.Add(Me.Cancelarb, 2, 5)
         Me.ControlTLP.Controls.Add(Me.GuardarB, 3, 5)
+        Me.ControlTLP.Controls.Add(Me.AnoTB, 2, 3)
         Me.ControlTLP.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ControlTLP.Location = New System.Drawing.Point(0, 0)
         Me.ControlTLP.Name = "ControlTLP"
@@ -121,21 +120,6 @@ Partial Class EditarJuego
         Me.NombreTB.TabIndex = 13
         Me.NombreTB.Text = "Nombre"
         '
-        'AnoNUD
-        '
-        Me.AnoNUD.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.AnoNUD.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.AnoNUD.Font = New System.Drawing.Font("Segoe UI Symbol", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.AnoNUD.Location = New System.Drawing.Point(161, 218)
-        Me.AnoNUD.Maximum = New Decimal(New Integer() {2024, 0, 0, 0})
-        Me.AnoNUD.Minimum = New Decimal(New Integer() {1950, 0, 0, 0})
-        Me.AnoNUD.Name = "AnoNUD"
-        Me.AnoNUD.Size = New System.Drawing.Size(100, 34)
-        Me.AnoNUD.TabIndex = 10
-        Me.AnoNUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.AnoNUD.Value = New Decimal(New Integer() {1950, 0, 0, 0})
-        Me.AnoNUD.Visible = False
-        '
         'AnyoL
         '
         Me.AnyoL.Anchor = System.Windows.Forms.AnchorStyles.Right
@@ -186,9 +170,9 @@ Partial Class EditarJuego
         Me.Cancelarb.AutoSize = True
         Me.Cancelarb.BackColor = System.Drawing.Color.SteelBlue
         Me.Cancelarb.Font = New System.Drawing.Font("Segoe UI Symbol", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Cancelarb.Location = New System.Drawing.Point(221, 376)
+        Me.Cancelarb.Location = New System.Drawing.Point(246, 376)
         Me.Cancelarb.Name = "Cancelarb"
-        Me.Cancelarb.Size = New System.Drawing.Size(184, 61)
+        Me.Cancelarb.Size = New System.Drawing.Size(134, 61)
         Me.Cancelarb.TabIndex = 15
         Me.Cancelarb.Text = "Cancelar"
         Me.Cancelarb.UseVisualStyleBackColor = False
@@ -199,12 +183,27 @@ Partial Class EditarJuego
         Me.GuardarB.AutoSize = True
         Me.GuardarB.BackColor = System.Drawing.Color.SteelBlue
         Me.GuardarB.Font = New System.Drawing.Font("Segoe UI Symbol", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GuardarB.Location = New System.Drawing.Point(538, 376)
+        Me.GuardarB.Location = New System.Drawing.Point(557, 376)
         Me.GuardarB.Name = "GuardarB"
-        Me.GuardarB.Size = New System.Drawing.Size(173, 61)
+        Me.GuardarB.Size = New System.Drawing.Size(134, 61)
         Me.GuardarB.TabIndex = 1
         Me.GuardarB.Text = "Guardar"
         Me.GuardarB.UseVisualStyleBackColor = False
+        '
+        'AnoTB
+        '
+        Me.AnoTB.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.AnoTB.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.AnoTB.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ControlTLP.SetColumnSpan(Me.AnoTB, 2)
+        Me.AnoTB.Font = New System.Drawing.Font("Segoe UI Symbol", 15.0!, System.Drawing.FontStyle.Bold)
+        Me.AnoTB.Location = New System.Drawing.Point(222, 218)
+        Me.AnoTB.MaxLength = 4
+        Me.AnoTB.Multiline = True
+        Me.AnoTB.Name = "AnoTB"
+        Me.AnoTB.Size = New System.Drawing.Size(494, 33)
+        Me.AnoTB.TabIndex = 19
+        Me.AnoTB.Text = "2000"
         '
         'EditarJuego
         '
@@ -217,7 +216,6 @@ Partial Class EditarJuego
         CType(Me.DatosDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ControlTLP.ResumeLayout(False)
         Me.ControlTLP.PerformLayout()
-        CType(Me.AnoNUD, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -225,7 +223,6 @@ Partial Class EditarJuego
     Friend WithEvents DatosDGV As DataGridView
     Friend WithEvents ControlTLP As TableLayoutPanel
     Friend WithEvents GuardarB As Button
-    Friend WithEvents AnoNUD As NumericUpDown
     Friend WithEvents DescripcionRTB As RichTextBox
     Friend WithEvents GeneroTB As TextBox
     Friend WithEvents NombreTB As TextBox
@@ -234,4 +231,5 @@ Partial Class EditarJuego
     Friend WithEvents GeneroL As Label
     Friend WithEvents TituloL As Label
     Friend WithEvents DescripcionL As Label
+    Friend WithEvents AnoTB As TextBox
 End Class

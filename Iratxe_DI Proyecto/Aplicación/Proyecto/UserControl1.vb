@@ -23,12 +23,12 @@
             GeneroTB.Text = value
         End Set
     End Property
-    Property ano As Integer
+    Property ano As String
         Get
-            Return AnoNUD.Value
+            Return AnoTB.Text
         End Get
-        Set(value As Integer)
-            AnoNUD.Value = value
+        Set(value As String)
+            AnoTB.Text = value
         End Set
     End Property
     Property descripcion As String
