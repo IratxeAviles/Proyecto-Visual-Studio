@@ -73,7 +73,14 @@ Public Class Biblioteca
 
     Sub Editar(sender As Object, e As ButtonClickEventArgs)
         Dim juego = controller.BuscarJuego(e.nombrePulsado)
-        BarraHerramienta.GetInstance.MostrarEdicion(Edicion.GetInstance(juego), juego)
+        BarraHerramienta.MostrarNuevoJuego(NuevoJuego.GetInstance)
+
+        Dim formulario = Edicion
+        formulario.Text = "Añadir Personaje"
+        formulario.juego = juego
+        formulario.CargarDatos()
+        formulario.Show()
+        'BarraHerramienta.MostrarEdicion(juego)
     End Sub
 
 
