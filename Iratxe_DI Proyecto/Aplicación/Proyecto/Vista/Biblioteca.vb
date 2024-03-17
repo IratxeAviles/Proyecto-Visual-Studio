@@ -5,7 +5,6 @@ Imports Microsoft.VisualBasic.Devices
 
 Public Class Biblioteca
     Shared ventana As Biblioteca
-    Dim listaJuegos As New List(Of Juego)
     Dim JuegosTLP = New TableLayoutPanel()
     Private controller As New Controlador()
 
@@ -19,7 +18,7 @@ Public Class Biblioteca
     Private Sub Biblioteca_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.ControlBox = False
         Me.FormBorderStyle = FormBorderStyle.None
-        listaJuegos = CargarDatos()
+        CargarDatos()
     End Sub
 
     Sub New()
@@ -39,7 +38,7 @@ Public Class Biblioteca
     End Sub
 
     Function CargarDatos()
-        listaJuegos = controller.ActualizarJuegos()
+        Dim listaJuegos = controller.ActualizarJuegos()
         JuegosTLP.Controls.Clear
         Me.Controls.Add(JuegosTLP)
 

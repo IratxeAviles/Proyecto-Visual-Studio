@@ -49,12 +49,12 @@ Partial Class Form1
         Me.PrincipalTLP.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PrincipalTLP.Location = New System.Drawing.Point(0, 0)
         Me.PrincipalTLP.Name = "PrincipalTLP"
-        Me.PrincipalTLP.RowCount = 5
-        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.272727!))
-        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.54546!))
-        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.63636!))
-        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.09091!))
-        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.454545!))
+        Me.PrincipalTLP.RowCount = 4
+        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307!))
+        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.23077!))
+        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.30769!))
+        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.76923!))
+        Me.PrincipalTLP.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.PrincipalTLP.Size = New System.Drawing.Size(724, 646)
         Me.PrincipalTLP.TabIndex = 0
         '
@@ -64,9 +64,9 @@ Partial Class Form1
         Me.PrincipalTLP.SetColumnSpan(Me.BienvenidoL, 3)
         Me.BienvenidoL.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BienvenidoL.Font = New System.Drawing.Font("Segoe UI Symbol", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BienvenidoL.Location = New System.Drawing.Point(112, 346)
+        Me.BienvenidoL.Location = New System.Drawing.Point(112, 367)
         Me.BienvenidoL.Name = "BienvenidoL"
-        Me.BienvenidoL.Size = New System.Drawing.Size(500, 75)
+        Me.BienvenidoL.Size = New System.Drawing.Size(500, 79)
         Me.BienvenidoL.TabIndex = 2
         Me.BienvenidoL.Text = "¡Bienvenid@ a tu biblioteca de juegos!"
         Me.BienvenidoL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -80,9 +80,9 @@ Partial Class Form1
         Me.LogoPB.Image = Global.Proyecto.My.Resources.Resources.Video_Game_Controller_Logo_Graphics_69127373_1_1695671731
         Me.LogoPB.ImageLocation = ""
         Me.LogoPB.InitialImage = CType(resources.GetObject("LogoPB.InitialImage"), System.Drawing.Image)
-        Me.LogoPB.Location = New System.Drawing.Point(112, 49)
+        Me.LogoPB.Location = New System.Drawing.Point(112, 52)
         Me.LogoPB.Name = "LogoPB"
-        Me.LogoPB.Size = New System.Drawing.Size(500, 294)
+        Me.LogoPB.Size = New System.Drawing.Size(500, 312)
         Me.LogoPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.LogoPB.TabIndex = 3
         Me.LogoPB.TabStop = False
@@ -93,7 +93,7 @@ Partial Class Form1
         Me.RegistroB.AutoSize = True
         Me.RegistroB.BackColor = System.Drawing.Color.SteelBlue
         Me.RegistroB.Font = New System.Drawing.Font("Segoe UI Symbol", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RegistroB.Location = New System.Drawing.Point(109, 492)
+        Me.RegistroB.Location = New System.Drawing.Point(109, 523)
         Me.RegistroB.Margin = New System.Windows.Forms.Padding(0)
         Me.RegistroB.Name = "RegistroB"
         Me.RegistroB.Padding = New System.Windows.Forms.Padding(5)
@@ -108,7 +108,7 @@ Partial Class Form1
         Me.IniciarSesionB.AutoSize = True
         Me.IniciarSesionB.BackColor = System.Drawing.Color.SteelBlue
         Me.IniciarSesionB.Font = New System.Drawing.Font("Segoe UI Symbol", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IniciarSesionB.Location = New System.Drawing.Point(418, 492)
+        Me.IniciarSesionB.Location = New System.Drawing.Point(418, 523)
         Me.IniciarSesionB.Margin = New System.Windows.Forms.Padding(0)
         Me.IniciarSesionB.Name = "IniciarSesionB"
         Me.IniciarSesionB.Padding = New System.Windows.Forms.Padding(5)
